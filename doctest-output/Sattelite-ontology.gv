@@ -1,0 +1,15 @@
+digraph "Sattelite-ontology" {
+	A [label=Sattelite]
+	B [label=Relay]
+	C [label=PhotoElement]
+	D [label=InfraElement]
+	E [label=Signal]
+	H [label=CUP]
+	A -> B [label=Has]
+	A -> C [label=Has]
+	A -> D [label=Has]
+	H -> E [label=Sends]
+	E -> B [label=Receives]
+	E -> C [label=Activate]
+	E -> D [label=Activate]
+}
